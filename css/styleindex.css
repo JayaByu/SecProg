@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+	background-image: url(../gambar/logbg.jpg);
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	flex-direction: column;
+}
+
+*{
+	font-family: 'Lato';
+	box-sizing: border-box;
+}
+
+form {
+	width: 460px;
+	padding: 35px 15px;
+	background: #fff;
+	border-radius: 15px;
+	box-shadow: 25px 20px 20px rgba(0,0,0,0.05);
+	transition: 0.5s all;
+	opacity: 0.9;
+}
+
+h2 {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+input {
+	display: block;
+	border-width: 0 0 2px;
+	border-color: grey;
+	width: 85%;
+	padding: 10px;
+	margin: 10px auto;
+	transition: 0.5s;
+	outline: none;
+}
+
+input:focus {
+	border-color: green;
+	
+	border-width: 0 0 3px;
+}
+
+label {
+	color: #888;
+	font-size: 15px;
+	padding: 10px;
+	margin-left: 22px;
+}
+
+
+button {
+	display: block;
+	margin: 20px auto;
+	background: #555;
+	padding: 10px 140px;
+	color: #fff;
+	border-radius: 50px;
+	font-size: 15px;
+	word-spacing: 2px;
+	border: none;
+	cursor: pointer;
+	transition: 0.5s;
+}
+button:hover{
+	opacity: .7;
+	background-color: green;
+	transform: scale(1.0);
+	padding: 10px 170px;
+}
+.error {
+   background: #F2DEDE;
+   color: #A94442;
+   padding: 10px;
+   width: 90%;
+   border-radius: 50px;
+   margin: 20px auto;
+}
+
+.success {
+   background: #D4EDDA;
+   color: #40754C;
+   padding: 10px;
+   width: 90%;
+   border-radius: 50px;
+   margin: 20px auto;
+}
+
+h1 {
+	text-align: center;
+	color: #fff;
+}
+
+
+p {
+	font-size: 14px;
+	text-align: center;
+	padding: 10px;
+	text-decoration: none;
+	color: #444;
+	
+
+}
+.ca {
+	font-size: 14px;
+	text-align: center;
+	padding: 10px 1px;
+	text-decoration: none;
+	color: green;
+	margin: auto;
+	
+}
+.ca:hover {
+	text-decoration: underline;
+} 
