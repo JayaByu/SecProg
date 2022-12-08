@@ -27,7 +27,7 @@
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="nhome.php">HOME</a>
+          <a class="nav-link" href="home.php">HOME</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" href="order"></i>ORDER</a>

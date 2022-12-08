@@ -45,7 +45,7 @@ session_start();
         </label>
         <a class="header-logo" href="index.html" ><img src="gambar/logox.png"  ></a>
             <ul>
-                <li><a  href="nhome.php">HOME</a></li>
+                <li><a  href="home.php">HOME</a></li>
                 <li><a  href="streetview">STREET VIEW</a></li>
                 <?php
                 if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
@@ -70,7 +70,7 @@ session_start();
                 <?php
                 } else {
                   ?>
-                  <a href="signin.php" title="login"><i class="fas fa-sign-in-alt"></i></a>
+                  <a href="login.php" title="login"><i class="fas fa-sign-in-alt"></i></a>
                 <?php
                 }
                 ?>

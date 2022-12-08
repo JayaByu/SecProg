@@ -20,9 +20,9 @@ session_start();
         <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
         </label>
-        <a class="logo" href="nhome" >Yokosso!</a>
+        <a class="logo" href="home" >Yokosso!</a>
             <ul>
-                <li><a  class="active" href="nhome.php">Home</a></li>
+                <li><a  class="active" href="home.php">Home</a></li>
                 <li><a  href="category.php">Category</a></li>
                 <?php
                 if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
