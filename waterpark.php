@@ -46,7 +46,6 @@ session_start();
             <ul>
                 <li><a  href="home">HOME</a></li>
                 <li><a  href="streetview">STREET VIEW</a></li>
-                <li><a  href="home#facilities">FACILITIES</a></li>
                 <li><a  href="order">ORDER</a></li>
                 <li><a  href="gallery">GALLERY</a></li>
                 <li><a  href="contact">CONTACT US</a></li>
