@@ -45,6 +45,6 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
 	}
 	
 }else{
-	header("Location: nhome.php");
+	header("Location: home.php");
 	exit();
 }
