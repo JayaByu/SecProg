@@ -12,35 +12,39 @@
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css' />
   <link rel='stylesheet' href="css/styleorder.css" />
   <link rel='stylesheet' href="css/font.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
   <!-- Navbar start -->
-  <nav class="navbar navbar-expand-md" id="navbar">
-    <!-- Brand -->
-    <a class="navbar-brand" href="nhome.php"><img src="gambar/logox.png"></a>
-    <!-- Toggler/collapsibe Button -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <!-- Navbar links -->
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="home.php">HOME</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="order"></i>ORDER</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact">CONTACT US</a>
-        </li>
-        <li class="nav-item">
+  <div class="header" id="navbar">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <a class="logo" href="home.php">Yokosso!</a>
+            <ul>
+                <li><a  class="active" href="home.php">Home</a></li>
+                <li><a  href="category">Category</a></li>
+                <?php
+                if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
+                  ?>
+                  <li><a href="order">Order</a></li>
+                
+                <?php
+                } else {
+                  ?>
+                  <li><a href="signup.php" onclick="alert('Login Required');">Order</a></li>
+                <?php
+                }
+                ?>
+                <li><a  href="contact">Contact Us</a></li>
+
+                  <li class="nav-item">
           <a class="nav-link" href="cart.php"><i class="fas fa-shopping-cart"></i> <span id="cart-item" class="badge badge-danger"></span></a>
         </li>
-      </ul>
+            </ul>
     </div>
-  </nav>
   <!-- Navbar end -->
 
   <!-- Displaying Products Start -->

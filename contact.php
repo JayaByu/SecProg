@@ -35,7 +35,7 @@ session_start();
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="icon" type="image/png" href="gambar/logo.png">
     <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css"> 
-    
+    <link rel="stylesheet" href="css/styleorder.css">
 </head>
 <body>
     <div class="header" id="navbar">
@@ -43,34 +43,33 @@ session_start();
         <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
         </label>
-        <a class="header-logo" href="index.html" ><img src="gambar/logox.png"  ></a>
-            <ul>
-                <li><a  href="home.php">HOME</a></li>
-                <li><a  href="streetview">STREET VIEW</a></li>
+        <a class="logo" href="home.php">Yokosso!</a>
+        <ul>
+                <li><a  class="active" href="home.php">Home</a></li>
+                <li><a  href="category">Category</a></li>
                 <?php
                 if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
                   ?>
-                  <li><a href="order">ORDER</a></li>
+                  <li><a href="order">Order</a></li>
                 
                 <?php
                 } else {
                   ?>
-                  <li><a href="signin" onclick="alert('Login Required');">ORDER</a></li>
+                  <li><a href="signup.php" onclick="alert('Login Required');">Order</a></li>
                 <?php
                 }
                 ?>
-                <li><a  href="gallery">GALLERY</a></li>
-                <li><a   class="active" href="contact">CONTACT US</a></li>
-                
+                <li><a  href="contact">Contact Us</a></li>
+
                 <?php
                 if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
                   ?>
-                  <a href="logout.php" title="logout"><i class="fas fa-sign-out-alt"></i></a>
+                  <a href="logout.php"><i class="fas fa-sign-out-alt"></i></a>
                 
                 <?php
                 } else {
                   ?>
-                  <a href="login.php" title="login"><i class="fas fa-sign-in-alt"></i></a>
+                  <a href="signup.php" title="login"><i class="fas fa-sign-in-alt"></i></a>
                 <?php
                 }
                 ?>

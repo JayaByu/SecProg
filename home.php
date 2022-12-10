@@ -20,7 +20,7 @@ session_start();
         <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
         </label>
-        <a class="logo" href="index.html" >Yokosso!</a>
+        <a class="logo" href="home.php" >Yokosso!</a>
             <ul>
                 <li><a  class="active" href="home.php">Home</a></li>
                 <li><a  href="category">Category</a></li>
